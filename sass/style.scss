@@ -1,4 +1,4 @@
-@use "../utilities/" as *;
+@use '../utilities/' as *;
 *,
 *::before,
 *::after {
@@ -6,6 +6,68 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
 body {
-	background-color: $background
+	background-color: $background;
+}
+// *****
+// HAMBURGER
+// *****
+.hamburger {
+    position: absolute;
+	z-index: 5;
+	&-box {
+		padding: 30px 10px;
+	}
+}
+// *****
+// NAVIGATION
+// *****
+.nav-desktop {
+	display: none;
+}
+.nav-mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 3rem;
+	background-image: linear-gradient(45deg, rgba(0, 0, 000, 0.75), rgba(24, 23, 20, 0.801)) ,url(../img/mcgregor-navbgc.jpg);
+	background-color: black;
+	background-position: 55%;
+	background-size: cover;
+	z-index: -5;
+    transform: translateX(-105%);
+    transition: transform .3s;
+}
+.nav__link {
+	color: $text;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2em 0;
+    letter-spacing: 4px;
+}
+// *****
+// HEADER
+// *****
+.header {
+	position: relative;
+	height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    &__img-box {
+        display: grid;
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
 }
