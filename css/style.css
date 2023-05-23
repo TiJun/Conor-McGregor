@@ -168,4 +168,11 @@ body {
 }
 .header__second-line {
   font-family: "Yatra One", cursive;
+}
+
+@media (min-width: 992px) {
+  .header__img-box {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }/*# sourceMappingURL=style.css.map */

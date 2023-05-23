@@ -64,7 +64,6 @@ body {
 // HEADER
 // *****
 .header {
-
 	position: relative;
 	height: 100vh;
 	display: grid;
@@ -113,3 +112,4 @@ body {
 		font-family: 'Yatra One', cursive;
 	}
 }
+@include large;
