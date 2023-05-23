@@ -140,7 +140,7 @@ body {
 }
 
 .nav__link {
-  color: #F4EEE0;
+  color: #242322;
   text-decoration: none;
   text-transform: uppercase;
   padding: 2em 0;
@@ -154,6 +154,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   overflow: hidden;
+  background: rgb(10, 150, 10);
+  background: linear-gradient(90deg, rgb(10, 150, 10) 0%, rgb(208, 208, 208) 11%, rgb(201, 201, 201) 28%, rgb(223, 124, 18) 50%);
 }
 .header__img-box {
   display: grid;
@@ -190,7 +192,7 @@ body {
   flex-direction: column;
 }
 .header__text-line {
-  color: #F4EEE0;
+  color: #242322;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
@@ -219,7 +221,7 @@ body {
   bottom: 0;
   padding: 0.5em 0;
   text-transform: uppercase;
-  color: #F4EEE0;
+  color: #242322;
   transform: translateY(100%);
   animation: bottomTextAnim 2s forwards;
   animation-delay: 1.5s;
@@ -231,7 +233,7 @@ body {
   left: 0;
   height: 2px;
   width: 700%;
-  background-color: #F4EEE0;
+  background-color: #242322;
   transform: translateX(-20%);
 }
 
