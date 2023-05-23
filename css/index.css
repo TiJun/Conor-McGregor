@@ -71,4 +71,20 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+@keyframes bottomTextAnim {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes bottomTextAnimDesktop {
+  from {
+    transform: translateY(450%);
+  }
+  to {
+    transform: translateY(330%);
+  }
 }/*# sourceMappingURL=index.css.map */

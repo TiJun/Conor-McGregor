@@ -10,9 +10,9 @@
 		.nav-desktop {
 			position: relative;
 			display: block;
-			font-size: 2rem;
+			font-size: 2em;
 			height: 60px;
-			padding: 0.5em 4em;
+			padding: 0.5em 6em;
 			&::before {
 				position: absolute;
 				content: '';
@@ -46,6 +46,7 @@
             &__text-line {
                 opacity: 0;
                 padding: 1em 0;
+                font-size: 4rem;
                 &--first {
                     margin-right: 10em;
                     animation: headingAnim 2s forwards;
@@ -59,6 +60,12 @@
                     animation: headingAnim 2s forwards;
                     animation-delay: 1s;
                 }
+            }
+            &__bottom-text {
+                transform: translateY(450%);
+                animation: bottomTextAnimDesktop 2s forwards;
+                animation-delay: 2s;
+                text-align: center;
             }
 		}
 	}

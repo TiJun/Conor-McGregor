@@ -72,6 +72,22 @@
     opacity: 1;
   }
 }
+@keyframes bottomTextAnim {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes bottomTextAnimDesktop {
+  from {
+    transform: translateY(450%);
+  }
+  to {
+    transform: translateY(330%);
+  }
+}
 *,
 *::before,
 *::after {
@@ -112,7 +128,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2rem;
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(24, 23, 20, 0.801)), url(../img/mcgregor-navbgc.jpg);
   background-color: black;
   background-position: 55%;
@@ -120,6 +136,7 @@ body {
   z-index: -5;
   transform: translateX(-105%);
   transition: transform 0.3s;
+  z-index: 10;
 }
 
 .nav__link {
@@ -136,6 +153,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
 }
 .header__img-box {
   display: grid;
@@ -150,15 +168,18 @@ body {
 }
 .header__img-box .header__img--one {
   background-image: url(../img/McGregor-Belt\ 1.jpg);
+  z-index: 5;
 }
 .header__img-box .header__img--two {
   background-image: url(../img/McGregor-\ Belt\ 2.jpg);
+  z-index: 5;
   opacity: 0;
   animation: HideImgAnimv2 30s infinite;
 }
 .header__img-box .header__img--three {
   background-image: url(../img/McGregor\ 2023.jpg);
   animation: HideImgAnim 45s infinite;
+  z-index: 5;
 }
 .header__text-box {
   grid-column: 1/3;
@@ -170,13 +191,61 @@ body {
 }
 .header__text-line {
   color: #F4EEE0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 .header__text-line {
   font-family: "Yatra One", cursive;
 }
+.header__text-line {
+  opacity: 0;
+  padding: 0.5em 0;
+}
+.header__text-line--first {
+  margin-right: 7em;
+  animation: headingAnim 2s forwards;
+}
+.header__text-line--second {
+  animation: headingAnim 2s forwards;
+  animation-delay: 0.5s;
+}
+.header__text-line--third {
+  margin-left: 5em;
+  animation: headingAnim 2s forwards;
+  animation-delay: 1s;
+}
+.header__bottom-text {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  color: #F4EEE0;
+  transform: translateY(100%);
+  animation: bottomTextAnim 2s forwards;
+  animation-delay: 1.5s;
+}
+.header__bottom-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 700%;
+  background-color: #F4EEE0;
+  transform: translateX(-20%);
+}
 
+@media (min-width: 768px) {
+  .nav-mobile {
+    font-size: 3rem;
+  }
+  .header__text-line {
+    font-size: 5rem;
+  }
+  .header__bottom-text {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 992px) {
   .hamburger {
     display: none;
@@ -187,9 +256,9 @@ body {
   .nav-desktop {
     position: relative;
     display: block;
-    font-size: 2rem;
+    font-size: 2em;
     height: 60px;
-    padding: 0.5em 4em;
+    padding: 0.5em 6em;
   }
   .nav-desktop::before {
     position: absolute;
@@ -222,6 +291,7 @@ body {
   .header__text-line {
     opacity: 0;
     padding: 1em 0;
+    font-size: 4rem;
   }
   .header__text-line--first {
     margin-right: 10em;
@@ -235,5 +305,11 @@ body {
     margin-left: 10em;
     animation: headingAnim 2s forwards;
     animation-delay: 1s;
+  }
+  .header__bottom-text {
+    transform: translateY(450%);
+    animation: bottomTextAnimDesktop 2s forwards;
+    animation-delay: 2s;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
