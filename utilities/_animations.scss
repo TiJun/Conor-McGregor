@@ -1,90 +1,70 @@
-@keyframes HideImgAnim {
-    0% {
-        opacity: 1;
-    }
-    20% {
-        opacity: 1;
-    }
-    30%{
-        opacity: 1;
-    }
-    40%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
-    }
-    60%{
-        opacity: 0;
-    }
-    70%{
-        opacity: 0;
-    }
-    80%{
-        opacity: 0;
-    }
-    90%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+@keyframes firstImg {
+	0% {
+		opacity: 1;
+	}
+	10% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-@keyframes HideImgAnimv2 {
-    0% {
-        opacity: 1;
-    }
-    20% {
-        opacity: 1;
-    }
-    30%{
-        opacity: 1;
-    }
-    40%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 1;
-    }
-    60%{
-        opacity: 0;
-    }
-    70%{
-        opacity: 0;
-    }
-    80%{
-        opacity: 0;
-    }
-    90%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes headingAnim {
-    from {
-        transform: translateX(-50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes bottomTextAnim {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-@keyframes bottomTextAnimDesktop {
-    from {
-        transform: translateY(450%);
-    }
-    to {
-        transform: translateY(330%);
-    }
+@keyframes secondImg {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
