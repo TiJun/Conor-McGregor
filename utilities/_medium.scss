@@ -1,15 +1,5 @@
 @mixin medium {
     @media (min-width: 768px) {
-        .nav-mobile {
-            font-size: 3rem;
-        }
-        .header {
-            &__text-line {
-                font-size: 5rem;
-            }
-            &__bottom-text {
-                font-size: 3rem;
-            }
-        }
+        
     }
 }
