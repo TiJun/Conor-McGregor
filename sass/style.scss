@@ -6,15 +6,22 @@
 	margin: 0;
 	padding: 0;
 }
-// font-family: 'Allura', cursive;
-// font-family: 'Cinzel', serif;
-// font-family: 'Yatra One', cursive;
+// *****
+// FONTS
+// font-family: 'Rubik Wet Paint', cursive;
+// font-family: 'Stalinist One', cursive;
+// *****
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
 body {
 	background-color: $background;
+}
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
 }
 // *****
 // HAMBURGER
@@ -64,6 +71,41 @@ body {
 // *****
 // HEADER
 // *****
-
+.header {
+	position: relative;
+	&__hero-sign {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Rubik Wet Paint', cursive;
+		color: #fff;
+		font-size: 10rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__span--one {
+		color: $irish-green;
+	}
+	&__span--two {
+		color: $irish-white;
+	}
+	&__span--three {
+		color: $irish-orange;
+	}
+	&__img-box {
+		position: absolute;
+	}
+	&__img--first, &__img--second {
+		position: absolute;
+		transform: translateX(50%)
+	}
+	&__shadow {
+		transform: translate(35%, 0);
+		height: 10px;
+		width: 300px;
+		// border: 2px solid white;
+		box-shadow: 0px -25px 41px 60px rgba(0, 0, 0, 1);
+	}
+}
 // @include medium;
-// @include large;
+@include large;
