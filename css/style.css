@@ -162,10 +162,10 @@ body {
   position: absolute;
   transform: translateX(50%);
 }
-.header__img--first, .header__shadow--first {
+.header__img--first {
   animation: firstImg 8s infinite ease-out;
 }
-.header__img--second, .header__shadow--second {
+.header__img--second {
   opacity: 0;
   animation: secondImg 8s infinite ease-out;
 }

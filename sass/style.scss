@@ -99,10 +99,10 @@ body {
 		position: absolute;
 		transform: translateX(50%)
 	}
-	&__img--first, &__shadow--first {
+	&__img--first {
 		animation: firstImg 8s infinite ease-out;
 	}
-	&__img--second, &__shadow--second {
+	&__img--second {
 		opacity: 0;
 		animation: secondImg 8s infinite ease-out;
 	}
