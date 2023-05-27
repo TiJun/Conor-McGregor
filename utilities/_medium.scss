@@ -19,6 +19,12 @@
                     width: 550px;
                 }
             }
+            &__heading {
+                width: 500px;
+                left: 50%;
+                font-size: 1.7em;
+                transform: translate(25%, 400%);
+            }
         }
     }
 }

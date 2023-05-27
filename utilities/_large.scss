@@ -44,6 +44,33 @@
 			&__img--first, &__img--second {
 				transform: translateX(60%);
 			}
+			&__heading {
+				width: 600px;
+				font-size: 2em;
+                transform: translate(50%, 400%);
+            }
+		}
+		.nav-desktop {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transform: translate(75%, -150%);
+			display: block;
+			color: #fff;
+			:nth-child(1):hover {
+				color: $irish-green;
+			}
+			:nth-child(7):hover {
+				color: $irish-orange;
+			}
+		}
+		.nav-separator {
+			font-size: 2em;
+		}
+		.nav__link {
+			color: #fff;
+			font-size: 2em;
+			padding: 0 1em;
 		}
 }
 }
