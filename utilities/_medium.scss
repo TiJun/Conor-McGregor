@@ -1,5 +1,24 @@
 @mixin medium {
     @media (min-width: 768px) {
-        
+        .header {
+            &__hero-sign {
+                font-size: 4.5em;
+            }
+            &__img--first, &__img--second {
+                transform: translateX(20%);
+            }
+            &__img--first {
+                img {
+                    height: 400px;
+                    width: 500px;
+                }
+            }
+            &__img--second {
+                img {
+                    height: 350px;
+                    width: 550px;
+                }
+            }
+        }
     }
 }

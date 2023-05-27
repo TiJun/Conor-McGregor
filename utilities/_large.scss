@@ -7,5 +7,43 @@
 		.nav-mobile {
 			display: none;
 		}
+		.header {
+			position: relative;
+			&__hero-sign {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0;
+				font-family: 'Rubik Wet Paint', cursive;
+				color: #fff;
+				font-size: 10rem;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			&__span--one {
+				color: $irish-green;
+			}
+			&__span--two {
+				color: $irish-white;
+			}
+			&__span--three {
+				color: $irish-orange;
+			}
+			&__shadow--first {
+				transform: translate(35%, 0);
+				height: 10px;
+				width: 300px;
+				box-shadow: 0px -25px 41px 60px rgba(0, 0, 0, 1);
+			}
+			&__shadow--second {
+				transform: translate(30%, 0);
+				height: 10px;
+				width: 500px;
+				box-shadow: 0px -25px 41px 30px rgba(0, 0, 0, 1);
+			}
+			&__img--first, &__img--second {
+				transform: translateX(60%);
+			}
+		}
 }
 }

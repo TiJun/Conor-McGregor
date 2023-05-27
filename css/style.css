@@ -135,14 +135,17 @@ body {
 
 .header {
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 .header__hero-sign {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1em 0;
   font-family: "Rubik Wet Paint", cursive;
   color: #fff;
-  font-size: 10rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -160,14 +163,20 @@ body {
 }
 .header__img--first, .header__img--second {
   position: absolute;
-  transform: translateX(50%);
 }
 .header__img--first {
   animation: firstImg 8s infinite ease-out;
 }
+.header__img--first img {
+  height: 280px;
+}
 .header__img--second {
-  opacity: 0;
   animation: secondImg 8s infinite ease-out;
+  opacity: 1;
+}
+.header__img--second img {
+  height: 250px;
+  width: 400px;
 }
 .header__shadow--first {
   transform: translate(35%, 0);
@@ -176,17 +185,81 @@ body {
   box-shadow: 0px -25px 41px 60px rgb(0, 0, 0);
 }
 .header__shadow--second {
-  transform: translate(30%, 0);
+  transform: translate(30%, 150%);
   height: 10px;
   width: 500px;
   box-shadow: 0px -25px 41px 30px rgb(0, 0, 0);
 }
 
+@media (min-width: 375px) {
+  .header__hero-sign {
+    padding: 1em;
+  }
+}
+@media (min-width: 414px) {
+  .header__hero-sign {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 768px) {
+  .header__hero-sign {
+    font-size: 4.5em;
+  }
+  .header__img--first, .header__img--second {
+    transform: translateX(20%);
+  }
+  .header__img--first img {
+    height: 400px;
+    width: 500px;
+  }
+  .header__img--second img {
+    height: 350px;
+    width: 550px;
+  }
+}
 @media (min-width: 992px) {
   .hamburger {
     display: none;
   }
   .nav-mobile {
     display: none;
+  }
+  .header {
+    position: relative;
+  }
+  .header__hero-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-family: "Rubik Wet Paint", cursive;
+    color: #fff;
+    font-size: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .header__span--one {
+    color: #009A44;
+  }
+  .header__span--two {
+    color: #FFFFFF;
+  }
+  .header__span--three {
+    color: #FF8200;
+  }
+  .header__shadow--first {
+    transform: translate(35%, 0);
+    height: 10px;
+    width: 300px;
+    box-shadow: 0px -25px 41px 60px rgb(0, 0, 0);
+  }
+  .header__shadow--second {
+    transform: translate(30%, 0);
+    height: 10px;
+    width: 500px;
+    box-shadow: 0px -25px 41px 30px rgb(0, 0, 0);
+  }
+  .header__img--first, .header__img--second {
+    transform: translateX(60%);
   }
 }/*# sourceMappingURL=style.css.map */
