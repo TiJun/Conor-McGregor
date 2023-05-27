@@ -4,6 +4,9 @@
             &__hero-sign {
                 padding:1em;
             }
+            &__heading {
+                transform: translate(-5%, 300%);
+            }
         }
     }
     @media (min-width: 414px) {
