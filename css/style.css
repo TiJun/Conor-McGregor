@@ -263,7 +263,8 @@ body {
 }
 
 .abouthim {
-  height: 75vh;
+  height: 120vh;
+  overflow: hidden;
 }
 .abouthim__heading {
   position: relative;
@@ -280,7 +281,7 @@ body {
   top: 0;
   left: 0;
   height: 2px;
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
 }
 .abouthim__img img {
@@ -303,6 +304,12 @@ body {
   .header__heading {
     transform: translate(-5%, 300%);
   }
+  .abouthim {
+    height: 100vh;
+  }
+  .abouthim__img {
+    margin: 0 2.5em;
+  }
 }
 @media (min-width: 414px) {
   .header__hero-sign {
@@ -310,6 +317,12 @@ body {
   }
   .header__heading {
     transform: translate(-1%, 300%);
+  }
+  .abouthim__img {
+    margin: 0 4em;
+  }
+  .abouthim__text {
+    font-size: 2.5em;
   }
 }
 @media (min-width: 768px) {
@@ -332,6 +345,18 @@ body {
     left: 50%;
     font-size: 1.7em;
     transform: translate(25%, 400%);
+  }
+  .abouthim {
+    height: 75vh;
+  }
+  .abouthim__heading {
+    font-size: 3em;
+  }
+  .abouthim__img {
+    margin: 0 14em;
+  }
+  .abouthim__img img {
+    height: 300px;
   }
 }
 @media (min-width: 992px) {
@@ -399,5 +424,12 @@ body {
     color: #fff;
     font-size: 2em;
     padding: 0 1em;
+  }
+  .abouthim {
+    height: 80vh;
+  }
+  .abouthim__img img {
+    height: 400px;
+    margin: 0 15em;
   }
 }/*# sourceMappingURL=style.css.map */

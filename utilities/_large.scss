@@ -66,5 +66,14 @@
 			font-size: 2em;
 			padding: 0 1em;
 		}
+		.abouthim {
+			height: 80vh;
+			&__img {
+				img {
+					height: 400px;
+					margin: 0 15em;
+				}
+			}
+		}
 }
 }

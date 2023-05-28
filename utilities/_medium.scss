@@ -26,5 +26,17 @@
                 transform: translate(25%, 400%);
             }
         }
+        .abouthim {
+            height: 75vh;
+            &__heading {
+                font-size: 3em;
+            }
+            &__img {
+                margin: 0 14em;
+                img {
+                    height: 300px;
+                }
+            }
+        }
     }
 }

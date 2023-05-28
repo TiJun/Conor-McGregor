@@ -195,7 +195,8 @@ body {
 // ABOUT HIM
 // *****
 .abouthim {
-	height: 75vh;
+	height: 120vh;
+	overflow: hidden;
 	&__heading {
 		position: relative;
 		font-size: 2.5em;
@@ -210,7 +211,7 @@ body {
 			top: 0;
 			left: 0;
 			height: 2px;
-			width: 100%;
+			width: 100vw;
 			background-color: #fff;
 		}
 	}
