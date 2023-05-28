@@ -330,6 +330,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .nav-mobile {
+    font-size: 3rem;
+  }
   .header__hero-sign {
     font-size: 4.5em;
   }
