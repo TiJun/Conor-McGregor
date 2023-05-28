@@ -102,6 +102,7 @@ body {
 .hamburger {
   position: absolute;
   z-index: 50;
+  touch-action: none;
 }
 .hamburger-box {
   padding: 30px 10px;
@@ -109,10 +110,6 @@ body {
 
 .nav-desktop {
   display: none;
-}
-
-.active-nav-mobile {
-  transform: translateX(0);
 }
 
 .nav-mobile--active {
@@ -136,6 +133,11 @@ body {
   z-index: 10;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+  touch-action: none;
+}
+
+.active-nav-mobile {
+  transform: translateX(0);
 }
 
 .nav__link {

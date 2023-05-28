@@ -29,6 +29,7 @@ body {
 .hamburger {
 	position: absolute;
 	z-index: 50;
+	touch-action: none;
 	&-box {
 		padding: 30px 10px;
 	}
@@ -38,9 +39,6 @@ body {
 // *****
 .nav-desktop {
 	display: none;
-}
-.active-nav-mobile {
-	transform: translateX(0);
 }
 .nav-mobile--active {
 	transform: translateX(0);
@@ -61,6 +59,10 @@ body {
 	transition: transform 0.3s;
 	z-index: 10;
 	backdrop-filter: blur(30px);
+	touch-action: none;
+}
+.active-nav-mobile {
+	transform: translateX(0);
 }
 .nav__link {
 	color: #fff;
