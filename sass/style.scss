@@ -191,6 +191,44 @@ body {
 		}
 	}
 }
+// *****
+// ABOUT HIM
+// *****
+.abouthim {
+	height: 75vh;
+	&__heading {
+		position: relative;
+		font-size: 2.5em;
+		padding: 2em 0;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Stalinist One', cursive;
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			background-color: #fff;
+		}
+	}
+	&__img {
+		img {
+			height: 200px;
+			margin: 0 1em;
+			border-radius: 50%;
+			box-shadow: 3px -2px 40px 0px rgba(148, 148, 148, 1);
+		}
+	}
+	&__text {
+		padding: 2em 1em;
+		color: #fff;
+		font-size: 2em;
+		text-align: center;
+	}
+}
 @include small;
 @include medium;
 @include large;
