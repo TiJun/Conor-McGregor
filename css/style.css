@@ -302,7 +302,8 @@ body {
     padding: 1em;
   }
   .header__heading {
-    transform: translate(-5%, 300%);
+    transform: translate(-5%, 350%);
+    font-size: 1.3rem;
   }
   .abouthim {
     height: 100vh;
@@ -316,7 +317,8 @@ body {
     font-size: 2.5em;
   }
   .header__heading {
-    transform: translate(-1%, 300%);
+    transform: translate(-1%, 350%);
+    font-size: 1.4rem;
   }
   .abouthim__img {
     margin: 0 4em;
@@ -344,7 +346,7 @@ body {
     width: 500px;
     left: 50%;
     font-size: 1.7em;
-    transform: translate(25%, 400%);
+    transform: translate(25%, 450%);
   }
   .abouthim {
     height: 75vh;
@@ -376,9 +378,11 @@ body {
     padding: 0;
     font-family: "Rubik Wet Paint", cursive;
     color: #fff;
-    font-size: 10rem;
     text-transform: uppercase;
     text-align: center;
+  }
+  .header__hero-sign h1 {
+    font-size: 15rem;
   }
   .header__span--one {
     color: #009A44;
@@ -410,11 +414,12 @@ body {
     transform: translate(50%, 400%);
   }
   .nav-desktop {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom: 0;
-    left: 0;
-    transform: translate(75%, -150%);
-    display: block;
+    padding: 5rem 0;
+    text-align: center;
     color: #fff;
   }
   .nav-separator {
@@ -422,7 +427,7 @@ body {
   }
   .nav__link {
     color: #fff;
-    font-size: 2em;
+    font-size: 3rem;
     padding: 0 1em;
   }
   .abouthim {
