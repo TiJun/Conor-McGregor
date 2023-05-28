@@ -115,6 +115,10 @@ body {
   transform: translateX(0);
 }
 
+.nav-mobile--active {
+  transform: translateX(0);
+}
+
 .nav-mobile {
   position: absolute;
   top: 0;
@@ -140,6 +144,10 @@ body {
   text-transform: uppercase;
   padding: 2em 0;
   letter-spacing: 4px;
+}
+
+.nav__link:hover {
+  color: red;
 }
 
 .header {
@@ -349,12 +357,6 @@ body {
     transform: translate(75%, -150%);
     display: block;
     color: #fff;
-  }
-  .nav-desktop :nth-child(1):hover {
-    color: #009A44;
-  }
-  .nav-desktop :nth-child(7):hover {
-    color: #FF8200;
   }
   .nav-separator {
     font-size: 2em;

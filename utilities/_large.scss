@@ -57,12 +57,6 @@
 			transform: translate(75%, -150%);
 			display: block;
 			color: #fff;
-			:nth-child(1):hover {
-				color: $irish-green;
-			}
-			:nth-child(7):hover {
-				color: $irish-orange;
-			}
 		}
 		.nav-separator {
 			font-size: 2em;
