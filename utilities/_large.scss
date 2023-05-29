@@ -78,5 +78,20 @@
 				}
 			}
 		}
+		.doublechamp {
+			overflow: hidden;
+			&__container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&--two {
+					margin: 5em 0;
+					flex-direction: row-reverse;
+				}
+			}
+			&__text {
+				font-size: 2rem;
+			}
+		}
 }
 }

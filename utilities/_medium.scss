@@ -41,5 +41,19 @@
                 }
             }
         }
+        .doublechamp {
+            img {
+                height: 300px;
+            }
+            &__img--first {
+                margin: 0 15em;
+            }
+            &__img--second {
+                margin: 5em 12em 0 12em;
+            }
+            &__text {
+                font-size: 2.5rem;
+            }
+        }
     }
 }

@@ -8,12 +8,12 @@ const allNavLinks = document.querySelectorAll('.nav__link')
 // FUNCTIONS
 // *****
 const handleNav = () => {
-    nav.classList.toggle('active-nav-mobile');
-	allNavLinks.forEach(btn => {
-        btn.addEventListener('click', () => {
-            nav.classList.remove('active-nav-mobile')
-        })
-    } )
+    nav.classList.toggle('nav-mobile--active');
+    allNavLinks.forEach(btn => btn.addEventListener(`click`, () => {
+        nav.classList.remove('nav-mobile--active');
+        navBtn.classList.remove('is-active');
+    }));
+    navBtn.classList.toggle('is-active');
 }
 // *****
 // LISTENERS

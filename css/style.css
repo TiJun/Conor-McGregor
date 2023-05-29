@@ -112,10 +112,6 @@ body {
   display: none;
 }
 
-.nav-mobile--active {
-  transform: translateX(0);
-}
-
 .nav-mobile {
   position: absolute;
   top: 0;
@@ -136,7 +132,7 @@ body {
   touch-action: none;
 }
 
-.active-nav-mobile {
+.nav-mobile--active {
   transform: translateX(0);
 }
 
@@ -299,6 +295,43 @@ body {
   text-align: center;
 }
 
+.doublechamp__heading {
+  position: relative;
+  font-size: 2.5em;
+  padding: 2em 1em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Stalinist One", cursive;
+}
+.doublechamp__heading::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100vw;
+  background-color: #fff;
+}
+.doublechamp img {
+  border-radius: 10px;
+  box-shadow: 3px -2px 40px 0px rgb(148, 148, 148);
+}
+.doublechamp__img--first {
+  height: 180px;
+  margin: 0 2.5em;
+}
+.doublechamp__img--second {
+  height: 150px;
+  margin: 2em 2.5em;
+}
+.doublechamp__text {
+  padding: 1em 1em;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
 @media (min-width: 375px) {
   .header__hero-sign {
     padding: 1em;
@@ -312,6 +345,12 @@ body {
   }
   .abouthim__img {
     margin: 0 2.5em;
+  }
+  .doublechamp__img--first {
+    margin: 0 5em;
+  }
+  .doublechamp__img--second {
+    margin: 5em 5em 0 5em;
   }
 }
 @media (min-width: 414px) {
@@ -327,6 +366,15 @@ body {
   }
   .abouthim__text {
     font-size: 2.5em;
+  }
+  .doublechamp img {
+    height: 200px;
+  }
+  .doublechamp__img--first {
+    margin: 0 6em;
+  }
+  .doublechamp__img--second {
+    margin: 5em 3em 0 3em;
   }
 }
 @media (min-width: 768px) {
@@ -364,6 +412,18 @@ body {
   }
   .abouthim__img img {
     height: 300px;
+  }
+  .doublechamp img {
+    height: 300px;
+  }
+  .doublechamp__img--first {
+    margin: 0 15em;
+  }
+  .doublechamp__img--second {
+    margin: 5em 12em 0 12em;
+  }
+  .doublechamp__text {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -441,5 +501,20 @@ body {
   .abouthim__img img {
     height: 400px;
     margin: 0 15em;
+  }
+  .doublechamp {
+    overflow: hidden;
+  }
+  .doublechamp__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .doublechamp__container--two {
+    margin: 5em 0;
+    flex-direction: row-reverse;
+  }
+  .doublechamp__text {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

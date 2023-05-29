@@ -15,6 +15,14 @@
                 margin: 0 2.5em;
             }
         }
+        .doublechamp {
+            &__img--first {
+                margin: 0 5em;
+            }
+            &__img--second {
+                margin: 5em 5em 0 5em;
+            }
+        }
     }
     @media (min-width: 414px) {
         .header {
@@ -32,6 +40,17 @@
             }
             &__text {
                 font-size: 2.5em;
+            }
+        }
+        .doublechamp {
+            img {
+                height: 200px;
+            }
+            &__img--first {
+                margin: 0 6em;
+            }
+            &__img--second {
+                margin: 5em 3em 0 3em;
             }
         }
     }

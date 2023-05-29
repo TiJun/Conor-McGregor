@@ -40,9 +40,6 @@ body {
 .nav-desktop {
 	display: none;
 }
-.nav-mobile--active {
-	transform: translateX(0);
-}
 .nav-mobile {
 	position: absolute;
 	top: 0;
@@ -61,7 +58,7 @@ body {
 	backdrop-filter: blur(30px);
 	touch-action: none;
 }
-.active-nav-mobile {
+.nav-mobile--active {
 	transform: translateX(0);
 }
 .nav__link {
@@ -231,6 +228,48 @@ body {
 		font-size: 2em;
 		text-align: center;
 	}
+}
+// *****
+// DOUBLECHAMP
+// *****
+.doublechamp {
+	&__heading {
+		position: relative;
+		font-size: 2.5em;
+		padding: 2em 1em;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Stalinist One', cursive;
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 100vw;
+			background-color: #fff;
+		}
+	}
+	img {
+		border-radius: 10px;
+		box-shadow: 3px -2px 40px 0px rgba(148, 148, 148, 1);
+	}
+	&__img--first {
+		height: 180px;
+		margin: 0 2.5em;
+	}
+	&__img--second {
+		height: 150px;
+		margin: 2em 2.5em;
+	}
+	&__text {
+		padding: 1em 1em;
+		font-size: 2rem;
+		color: #fff;
+		text-align: center;
+	}
+	
 }
 @include small;
 @include medium;
