@@ -91,12 +91,32 @@ html {
 
 body {
   background-color: black;
+  color: #fff;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 2.5em;
+  padding: 2em 1em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Stalinist One", cursive;
+}
+.section-heading .section-heading::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100vw;
+  background-color: #fff;
 }
 
 .hamburger {
@@ -304,7 +324,7 @@ body {
 .doublechamp__heading {
   position: relative;
   font-size: 2.5em;
-  padding: 2em 1em;
+  padding: 2em 0;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -337,6 +357,85 @@ body {
   color: #fff;
   text-align: center;
 }
+.doublechamp__container--two {
+  margin-top: 5em;
+}
+
+.timeline {
+  height: auto;
+}
+.timeline__heading {
+  position: relative;
+  font-size: 2.5em;
+  padding: 2em 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Stalinist One", cursive;
+}
+.timeline__heading::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100vw;
+  background-color: #fff;
+}
+.timeline__box {
+  background-color: #817e7e;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.timeline__hero {
+  position: relative;
+}
+.timeline__hero ::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100vw;
+  background-color: #474242;
+}
+.timeline__hero-img img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+.timeline__hero-date {
+  position: relative;
+  padding: 0.5em 0;
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 3em;
+  color: #474242;
+  text-align: center;
+}
+.timeline__hero-date ::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: #474242;
+}
+.timeline__text {
+  position: relative;
+  padding: 0.5em 0;
+  font-size: 1.8em;
+  text-align: center;
+}
+.timeline__text ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: #474242;
+}
 
 @media (min-width: 375px) {
   .header__hero-sign {
@@ -348,9 +447,6 @@ body {
   }
   .abouthim {
     height: 100vh;
-  }
-  .doublechamp__container--two {
-    margin-top: 5em;
   }
 }
 @media (min-width: 414px) {

@@ -11,18 +11,40 @@
 // font-family: 'Rubik Wet Paint', cursive;
 // font-family: 'Stalinist One', cursive;
 // *****
+// *****
+// COMPONENTS
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
 body {
 	background-color: $background;
+	color: #fff;
 }
 .wrapper {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 }
+.section-heading {
+	position: relative;
+	font-size: 2.5em;
+	padding: 2em 1em;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Stalinist One', cursive;
+	.section-heading::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		height: 2px;
+		width: 100vw;
+		background-color: #fff;
+	}
+}
+// *****
 // *****
 // HAMBURGER
 // *****
@@ -101,7 +123,8 @@ body {
 	&__img-box {
 		position: absolute;
 	}
-	&__img--first, &__img--second {
+	&__img--first,
+	&__img--second {
 		position: absolute;
 	}
 	&__img--first {
@@ -113,7 +136,6 @@ body {
 	&__img--second {
 		animation: secondImg 8s infinite ease-out;
 		opacity: 1;
-		// padding: 0 .2em;
 		img {
 			height: 250px;
 			width: 400px;
@@ -148,16 +170,16 @@ body {
 	}
 	&__first-name {
 		:nth-child(1) {
-			animation-delay: .2s;
+			animation-delay: 0.2s;
 		}
 		:nth-child(2) {
-			animation-delay: .4s;
+			animation-delay: 0.4s;
 		}
 		:nth-child(3) {
-			animation-delay: .6s;
+			animation-delay: 0.6s;
 		}
 		:nth-child(4) {
-			animation-delay: .8s;
+			animation-delay: 0.8s;
 		}
 		:nth-child(5) {
 			animation-delay: 1s;
@@ -165,28 +187,28 @@ body {
 	}
 	&__last-name {
 		:nth-child(1) {
-			animation-delay: 1.2s
+			animation-delay: 1.2s;
 		}
 		:nth-child(2) {
-			animation-delay: 1.4s
+			animation-delay: 1.4s;
 		}
 		:nth-child(3) {
-			animation-delay: 1.6s
+			animation-delay: 1.6s;
 		}
 		:nth-child(4) {
-			animation-delay: 1.8s
+			animation-delay: 1.8s;
 		}
 		:nth-child(5) {
-			animation-delay: 2s
+			animation-delay: 2s;
 		}
 		:nth-child(6) {
-			animation-delay: 2.2s
+			animation-delay: 2.2s;
 		}
 		:nth-child(7) {
-			animation-delay: 2.4s
+			animation-delay: 2.4s;
 		}
 		:nth-child(8) {
-			animation-delay: 2.6s
+			animation-delay: 2.6s;
 		}
 	}
 }
@@ -197,22 +219,7 @@ body {
 	height: 120vh;
 	overflow: hidden;
 	&__heading {
-		position: relative;
-		font-size: 2.5em;
-		padding: 2em 0;
-		color: #fff;
-		text-align: center;
-		text-transform: uppercase;
-		font-family: 'Stalinist One', cursive;
-		&::before {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			height: 2px;
-			width: 100vw;
-			background-color: #fff;
-		}
+		@include heading;
 	}
 	&__img {
 		width: 100%;
@@ -238,22 +245,7 @@ body {
 // *****
 .doublechamp {
 	&__heading {
-		position: relative;
-		font-size: 2.5em;
-		padding: 2em 1em;
-		color: #fff;
-		text-align: center;
-		text-transform: uppercase;
-		font-family: 'Stalinist One', cursive;
-		&::before {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			height: 2px;
-			width: 100vw;
-			background-color: #fff;
-		}
+		@include heading;
 	}
 	img {
 		display: block;
@@ -273,7 +265,74 @@ body {
 		color: #fff;
 		text-align: center;
 	}
-	
+	&__container--two {
+		margin-top: 5em;
+	}
+}
+// *****
+// TIMELINE
+// *****
+.timeline {
+	height: auto;
+	&__heading {
+		@include heading;
+	}
+	&__box {
+		background-color: #817e7e;
+		border-radius: 50px;
+		overflow: hidden;
+	}
+	&__hero {
+		position: relative;
+		::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 100vw;
+			background-color: #474242;
+		}
+		&-img {
+			img {
+				display: block;
+				margin: 0 auto;
+				height: 200px;
+			}
+		}
+		&-date {
+			position: relative;
+			padding: .5em 0;
+			font-family: 'Rubik Wet Paint', cursive;
+			font-size: 3em;
+			color: #474242;
+			text-align: center;
+			::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100vw;
+				height: 2px;
+				background-color: #474242;
+			}
+		}
+	}
+	&__text {
+		position: relative;
+		padding: 0.5em 0;
+		font-size: 1.8em;
+		text-align: center;
+		::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 2px;
+			background-color: #474242;
+		}
+	}
 }
 @include small;
 @include medium;
