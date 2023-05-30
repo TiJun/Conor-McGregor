@@ -282,9 +282,15 @@ body {
   width: 100vw;
   background-color: #fff;
 }
+.abouthim__img {
+  width: 100%;
+  margin: auto;
+}
 .abouthim__img img {
+  display: block;
   height: 200px;
-  margin: 0 1em;
+  width: 300px;
+  margin: 0 auto;
   border-radius: 50%;
   box-shadow: 3px -2px 40px 0px rgb(148, 148, 148);
 }
@@ -314,16 +320,16 @@ body {
   background-color: #fff;
 }
 .doublechamp img {
+  display: block;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 3px -2px 40px 0px rgb(148, 148, 148);
 }
 .doublechamp__img--first {
   height: 180px;
-  margin: 0 2.5em;
 }
 .doublechamp__img--second {
   height: 150px;
-  margin: 2em 2.5em;
 }
 .doublechamp__text {
   padding: 1em 1em;
@@ -343,14 +349,8 @@ body {
   .abouthim {
     height: 100vh;
   }
-  .abouthim__img {
-    margin: 0 2.5em;
-  }
-  .doublechamp__img--first {
-    margin: 0 5em;
-  }
-  .doublechamp__img--second {
-    margin: 5em 5em 0 5em;
+  .doublechamp__container--two {
+    margin-top: 5em;
   }
 }
 @media (min-width: 414px) {
@@ -361,20 +361,11 @@ body {
     transform: translate(-1%, 350%);
     font-size: 1.4rem;
   }
-  .abouthim__img {
-    margin: 0 4em;
-  }
   .abouthim__text {
     font-size: 2.5em;
   }
   .doublechamp img {
     height: 200px;
-  }
-  .doublechamp__img--first {
-    margin: 0 6em;
-  }
-  .doublechamp__img--second {
-    margin: 5em 3em 0 3em;
   }
 }
 @media (min-width: 768px) {
@@ -407,11 +398,9 @@ body {
   .abouthim__heading {
     font-size: 3em;
   }
-  .abouthim__img {
-    margin: 0 14em;
-  }
   .abouthim__img img {
     height: 300px;
+    width: 400px;
   }
   .doublechamp img {
     height: 300px;
@@ -500,7 +489,7 @@ body {
   }
   .abouthim__img img {
     height: 400px;
-    margin: 0 15em;
+    width: 500px;
   }
   .doublechamp {
     overflow: hidden;
