@@ -275,6 +275,7 @@ body {
 // *****
 .timeline {
 	height: auto;
+	overflow: hidden;
 	&__heading {
 		@include heading;
 	}
@@ -285,8 +286,9 @@ body {
 		align-items: center;
 	}
 	&__box {
-		width: 80vw;
+		width: auto;
 		margin-bottom: 5rem;
+		padding: 0 1rem;
 		background-color: #166d3b;
 		background-image: linear-gradient(147deg, #166d3b 0%, #2c2c2c 74%);
 		border-radius: 15px;
@@ -301,14 +303,15 @@ body {
 				position: absolute;
 				bottom: -5px;
 				left: 0;
-				width: 100%;
+				width: 120%;
 				height: 5px;
+				transform: translateX(-8%);
 				background-color: #000;
 			}
 		}
 		&--content {
 			position: relative;
-			padding: 1rem;
+			// padding: 1rem;
 			font-size: 2.5rem;
 			text-align: center;
 			font-family: 'Slackside One', cursive;
@@ -331,6 +334,14 @@ body {
 			text-align: center;
 			font-family: 'Slackside One', cursive;
 		}
+	}
+}
+// *****
+// NOW
+// *****
+.now {
+	&__img {
+		height: 200px;
 	}
 }
 @include small;

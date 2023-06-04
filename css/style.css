@@ -373,6 +373,7 @@ body {
 
 .timeline {
   height: auto;
+  overflow: hidden;
 }
 .timeline__heading {
   position: relative;
@@ -399,8 +400,9 @@ body {
   align-items: center;
 }
 .timeline__box {
-  width: 80vw;
+  width: auto;
   margin-bottom: 5rem;
+  padding: 0 1rem;
   background-color: #166d3b;
   background-image: linear-gradient(147deg, #166d3b 0%, #2c2c2c 74%);
   border-radius: 15px;
@@ -417,13 +419,13 @@ body {
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 100%;
+  width: 120%;
   height: 5px;
+  transform: translateX(-8%);
   background-color: #000;
 }
 .timeline__box--content {
   position: relative;
-  padding: 1rem;
   font-size: 2.5rem;
   text-align: center;
   font-family: "Slackside One", cursive;
@@ -445,6 +447,10 @@ body {
   font-size: 2.5rem;
   text-align: center;
   font-family: "Slackside One", cursive;
+}
+
+.now__img {
+  height: 200px;
 }
 
 @media (min-width: 375px) {
@@ -519,6 +525,9 @@ body {
   }
   .doublechamp__text {
     font-size: 2.5rem;
+  }
+  .timeline__box {
+    width: auto;
   }
 }
 @media (min-width: 992px) {
@@ -611,5 +620,11 @@ body {
   }
   .doublechamp__text {
     font-size: 2rem;
+  }
+  .timeline {
+    overflow: hidden;
+  }
+  .timeline__container:nth-child(5) {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */

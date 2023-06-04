@@ -93,5 +93,11 @@
 				font-size: 2rem;
 			}
 		}
+		.timeline {
+			overflow: hidden;
+			&__container:nth-child(5) {
+				font-size: 4rem;
+			}
+		}
 }
 }

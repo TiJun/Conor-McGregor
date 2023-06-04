@@ -1,59 +1,65 @@
 @mixin medium {
-    @media (min-width: 768px) {
-        .nav-mobile {
-            font-size: 3rem;
-        }
-        .header {
-            &__hero-sign {
-                font-size: 4.5em;
-            }
-            &__img--first, &__img--second {
-                transform: translateX(20%);
-            }
-            &__img--first {
-                img {
-                    height: 400px;
-                    width: 500px;
-                }
-            }
-            &__img--second {
-                img {
-                    height: 350px;
-                    width: 550px;
-                }
-            }
-            &__heading {
-                width: 500px;
-                left: 50%;
-                font-size: 1.7em;
-                transform: translate(25%, 450%);
-            }
-        }
-        .abouthim {
-            height: 75vh;
-            &__heading {
-                font-size: 3em;
-            }
-            &__img {
-                img {
-                    height: 300px;
-                    width: 400px;
-                }
-            }
-        }
-        .doublechamp {
-            img {
-                height: 300px;
-            }
-            &__img--first {
-                margin: 0 15em;
-            }
-            &__img--second {
-                margin: 5em 12em 0 12em;
-            }
-            &__text {
-                font-size: 2.5rem;
-            }
-        }
-    }
+	@media (min-width: 768px) {
+		.nav-mobile {
+			font-size: 3rem;
+		}
+		.header {
+			&__hero-sign {
+				font-size: 4.5em;
+			}
+			&__img--first,
+			&__img--second {
+				transform: translateX(20%);
+			}
+			&__img--first {
+				img {
+					height: 400px;
+					width: 500px;
+				}
+			}
+			&__img--second {
+				img {
+					height: 350px;
+					width: 550px;
+				}
+			}
+			&__heading {
+				width: 500px;
+				left: 50%;
+				font-size: 1.7em;
+				transform: translate(25%, 450%);
+			}
+		}
+		.abouthim {
+			height: 75vh;
+			&__heading {
+				font-size: 3em;
+			}
+			&__img {
+				img {
+					height: 300px;
+					width: 400px;
+				}
+			}
+		}
+		.doublechamp {
+			img {
+				height: 300px;
+			}
+			&__img--first {
+				margin: 0 15em;
+			}
+			&__img--second {
+				margin: 5em 12em 0 12em;
+			}
+			&__text {
+				font-size: 2.5rem;
+			}
+		}
+		.timeline {
+			&__box {
+				width: auto;
+			}
+		}
+	}
 }
