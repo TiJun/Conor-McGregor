@@ -245,6 +245,7 @@ body {
 // DOUBLECHAMP
 // *****
 .doublechamp {
+	overflow: hidden;
 	&__heading {
 		@include heading;
 	}
