@@ -10,6 +10,7 @@
 // FONTS
 // font-family: 'Rubik Wet Paint', cursive;
 // font-family: 'Stalinist One', cursive;
+// font-family: 'Slackside One', cursive;
 // *****
 // *****
 // COMPONENTS
@@ -277,60 +278,50 @@ body {
 	&__heading {
 		@include heading;
 	}
-	&__box {
-		background-color: #817e7e;
-		border-radius: 50px;
-		overflow: hidden;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
-	&__hero {
-		position: relative;
-		::before {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			height: 2px;
-			width: 100vw;
-			background-color: #474242;
-		}
-		&-img {
-			img {
-				display: block;
-				margin: 0 auto;
-				height: 200px;
-			}
-		}
-		&-date {
+	&__box {
+		width: 80vw;
+		margin-bottom: 5rem;
+		background-color: #166d3b;
+		background-image: linear-gradient(147deg, #166d3b 0%, #2c2c2c 74%);
+		border-radius: 15px;
+		&--heading {
 			position: relative;
-			padding: .5em 0;
-			font-family: 'Rubik Wet Paint', cursive;
-			font-size: 3em;
-			color: #474242;
+			font-size: 3rem;
 			text-align: center;
-			::before {
+			font-family: 'Slackside One', cursive;
+			line-height: auto;
+			&::before {
 				content: '';
 				position: absolute;
-				bottom: 0;
+				bottom: -5px;
 				left: 0;
-				width: 100vw;
-				height: 2px;
-				background-color: #474242;
+				width: 100%;
+				height: 5px;
+				background-color: #000;
 			}
 		}
-	}
-	&__text {
-		position: relative;
-		padding: 0.5em 0;
-		font-size: 1.8em;
-		text-align: center;
-		::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 2px;
-			background-color: #474242;
+		&--content {
+			position: relative;
+			font-size: 2.5rem;
+			text-align: center;
+			font-family: 'Slackside One', cursive;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: -50px;
+				left: 50%;
+				width: 5px;
+				height: 100px;
+				background-color: #a40606;
+				background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+				z-index: -5;
+			}
 		}
 	}
 }
