@@ -449,8 +449,40 @@ body {
   font-family: "Slackside One", cursive;
 }
 
+.now {
+  height: auto;
+  overflow: hidden;
+}
+.now__heading {
+  position: relative;
+  font-size: 2.5em;
+  padding: 2em 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Stalinist One", cursive;
+}
+.now__heading::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100vw;
+  background-color: #fff;
+}
 .now__img {
+  display: block;
+  margin: 0 auto;
   height: 200px;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+  box-shadow: 3px -2px 40px 0px rgb(148, 148, 148);
+}
+.now__text {
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media (min-width: 375px) {
@@ -528,6 +560,12 @@ body {
   }
   .timeline__box {
     width: auto;
+  }
+  .now__img {
+    height: 300px;
+  }
+  .now__text {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -626,5 +664,8 @@ body {
   }
   .timeline__container:nth-child(5) {
     font-size: 4rem;
+  }
+  .now__img {
+    height: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

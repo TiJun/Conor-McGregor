@@ -340,8 +340,23 @@ body {
 // NOW
 // *****
 .now {
+	height: auto;
+	overflow: hidden;
+	&__heading {
+		@include heading;
+	}
 	&__img {
+		display: block;
+		margin: 0 auto;
 		height: 200px;
+		margin-bottom: 2rem;
+		border-radius: 50px;
+		box-shadow: 3px -2px 40px 0px rgba(148, 148, 148, 1);
+	}
+	&__text {
+		padding: 1rem 1rem;
+		font-size: 2rem;
+		text-align: center;
 	}
 }
 @include small;
