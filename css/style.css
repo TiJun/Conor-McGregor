@@ -488,6 +488,26 @@ body {
   text-align: center;
 }
 
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.footer__text {
+  padding: 2rem 0;
+}
+
 @media (min-width: 375px) {
   .header__hero-sign {
     padding: 1em;
